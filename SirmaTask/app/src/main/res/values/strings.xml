@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SirmaTask</string>
+    <string name="choose_file">Choose a file</string>
+    <string name="employee_id_1">Employee ID #1</string>
+    <string name="employee_id_2">Employee ID #2</string>
+    <string name="project_id">Project ID</string>
+    <string name="days_worked">Days worked</string>
+
+    <string name="best_team">The pair of employees which are worked together on joint projects longest are: employeeID: %1$d and employeeID: %2$d with total overlap duration %3$d days</string>
+
+
+
+</resources>
+
+

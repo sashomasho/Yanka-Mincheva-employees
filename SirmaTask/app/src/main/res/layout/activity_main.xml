@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/choose_fileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_file"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/employeesColumns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/column_1_emplID_1_Txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/employee_id_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <TextView
+            android:id="@+id/column_2_emplID_2_Txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/employee_id_2"
+            app:layout_constraintLeft_toRightOf="@+id/column_1_emplID_1_Txt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <TextView
+            android:id="@+id/column_3_projectID_Txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/project_id"
+            app:layout_constraintLeft_toRightOf="@+id/column_2_emplID_2_Txt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".25" />
+
+        <TextView
+            android:id="@+id/column_4_daysWorked_Txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/days_worked"
+            app:layout_constraintLeft_toRightOf="@+id/column_3_projectID_Txt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".25" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/employeesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/employeesColumns" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
